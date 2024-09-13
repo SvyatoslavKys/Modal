@@ -68,7 +68,7 @@
     position: relative;
     z-index: 3;
 }
-.input-name{
+.form-label{
     position: absolute;
     left: 0;
     top: 50%;
@@ -76,6 +76,9 @@
     z-index: 2;
     display: inline-block;
     transition: 500ms ease-in-out;
+}
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-176%) translateX(5px) scale(0.8);
 }
 .focus{
     transform: translateY(-176%) translateX(5px) scale(0.8);

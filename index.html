@@ -14,22 +14,29 @@
             <form class="form-style" action="">
                 
                 <div class="label-position">
-                <label class="input-name focus" for="name">
+                    <input class="form-input" id="name" type="text" placeholder=".">
+                <label class="form-label" for="name" >
                     Name
                 </label>
-                <input id="name" type="text">
+              
                 </div>
-                <div class="label-position">
-                    <label class="input-name focus"  for="name">
+                <form class="form-style" action="">
+                
+                    <div class="label-position">
+                        <input class="form-input" id="name" type="phone" placeholder=".">
+                    <label class="form-label" for="name" >
                         Phone
                     </label>
-                    <input id="name" type="text">
+                  
                     </div>
-                    <div class="label-position">
-                        <label class="input-name focus" for="name">
+                    <form class="form-style" action="">
+                
+                        <div class="label-position">
+                            <input class="form-input" id="name" type="mail" placeholder=".">
+                        <label class="form-label" for="name" >
                             Mail
                         </label>
-                        <input id="name" type="text">
+                      
                         </div>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
                 <label for=""> i agree
@@ -43,12 +50,5 @@
     </div>
     
 </body>
-<script>
-    $("label-position").focus(function(){
-        $(this).parent().addClass("focus");
-    }).blur(function(){ if($(this).val()===''){
-        $(this).parent().removeClass("focus");
-    }
-    })
-</script>
+
 </html>
