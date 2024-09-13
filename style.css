@@ -1,0 +1,86 @@
+
+.overlay{
+    background: #3C372A99;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+
+    position: relative;
+    width: 600px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+
+}
+.form-style{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25px, -9px);
+    color: black;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 20px 0;
+    transition: 500ms ease-in-out;
+}
+.close::before{
+    content: '';
+    height: 2px;
+    width: 25px;
+    background: black;
+    transform: rotate(45deg) translateY(-17px);
+    transition: 500ms ease-in-out;
+    
+
+}
+.close::after{
+    content: '';
+    height: 2px;
+    width: 25px;
+    background: #000;
+    transform: rotate(-45deg) translateY(-18px);
+    transition: 500ms ease-in-out;
+}
+.close:hover::before{
+    transform: rotate(-45deg) translate(17px, 0px);
+   
+}
+.close:hover::after{
+    transform: rotate(45deg) translate(-18px, 1px);  
+}
+
+.label-position{
+    position: relative;
+    z-index: 3;
+}
+.input-name{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(5px);
+    z-index: 2;
+    display: inline-block;
+    transition: 500ms ease-in-out;
+}
+.focus{
+    transform: translateY(-176%) translateX(5px) scale(0.8);
+}
+textarea{
+    width: 100%;
+    resize: none;
+}

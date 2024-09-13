@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="overlay">
+        <div class="modal">
+            <h2>leave your details, we will call you back</h2>
+            <form class="form-style" action="">
+                
+                <div class="label-position">
+                <label class="input-name focus" for="name">
+                    Name
+                </label>
+                <input id="name" type="text">
+                </div>
+                <div class="label-position">
+                    <label class="input-name focus"  for="name">
+                        Phone
+                    </label>
+                    <input id="name" type="text">
+                    </div>
+                    <div class="label-position">
+                        <label class="input-name focus" for="name">
+                            Mail
+                        </label>
+                        <input id="name" type="text">
+                        </div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for=""> i agree
+                    <input  type="checkbox" checked>
+                </label>
+                <button type="submit"> submit</button>
+            </form>
+            <button class="close"></button>
+
+        </div>
+    </div>
+    
+</body>
+<script>
+    $("label-position").focus(function(){
+        $(this).parent().addClass("focus");
+    }).blur(function(){ if($(this).val()===''){
+        $(this).parent().removeClass("focus");
+    }
+    })
+</script>
+</html>
