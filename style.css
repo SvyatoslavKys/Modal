@@ -14,8 +14,9 @@
     height: 800px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.644);
     padding: 20px;
+    user-select: none;
 
 }
 .form-style{
@@ -86,4 +87,38 @@
 textarea{
     width: 100%;
     resize: none;
+}
+.cb-custom{
+    appearance: none;
+    position: absolute;
+}
+.cbplace{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80px;
+    cursor: pointer;
+
+    /* background: #000; */
+}
+.cb-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./img/svg/Rectangle\ 99.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease-in-out;
+    
+
+}
+.cb-custom:checked + .cb-icon {
+    background-image: url(./img/svg/Vector\ \(1\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 500ms ease-in-out;
+    fill: aqua;
+}
+.message{
+    padding: 10px;
 }
