@@ -68,6 +68,7 @@
 .label-position{
     position: relative;
     z-index: 3;
+    
 }
 .form-label{
     position: absolute;
@@ -77,6 +78,7 @@
     z-index: 2;
     display: inline-block;
     transition: 500ms ease-in-out;
+    cursor: pointer;
 }
 .form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
     transform: translateY(-176%) translateX(5px) scale(0.8);
@@ -121,4 +123,24 @@ textarea{
 }
 .message{
     padding: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.btnsubmit{
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background: #03e120a6;
+    min-width: 50px;
+    max-width: 100px;
+    border: none;
+    border-radius: 4px;
+    transition: 500ms ease-in-out;
+}
+.btnsubmit:hover{
+    background: #93e103;
 }

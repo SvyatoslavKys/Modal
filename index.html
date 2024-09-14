@@ -14,7 +14,7 @@
             <form class="form-style" action="">
                 
                 <div class="label-position">
-                    <input class="form-input" id="name" type="text" placeholder=" ">
+                    <input class="form-input" id="name" type="text" placeholder=" " title="Alex" minlength="2" required>
                 <label class="form-label" for="name" >
                     Name
                 </label>
@@ -23,8 +23,8 @@
                 <form class="form-style" action="">
                 
                     <div class="label-position">
-                        <input class="form-input" id="name" type="number" placeholder=" ">
-                    <label class="form-label" for="name" >
+                        <input class="form-input number" id="Phone" type="number" title="123 456 789" placeholder=" " required>
+                    <label class="form-label" for="Phone" >
                         Phone
                     </label>
                   
@@ -32,20 +32,20 @@
                     <form class="form-style" action="">
                 
                         <div class="label-position">
-                            <input class="form-input" id="name" type="email" placeholder=" ">
-                        <label class="form-label" for="name" >
+                            <input class="form-input" id="email" type="email" title="yourmail.mail.com" placeholder=" " >
+                        <label class="form-label" for="email" >
                             Mail
                         </label>
                       
                         </div>
-                <textarea class="message" name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+                <textarea class="message" name="message" id="" cols="30" rows="10" placeholder="your message" required></textarea>
 
                 <label class="cbplace" > i agree
-                    <input class="cb-custom" type="checkbox">
+                    <input class="cb-custom" type="checkbox" required>
                     <span class="cb-icon"></span>
                 </label>
 
-                <button type="submit"> submit</button>
+                <button class="btnsubmit" type="submit"> submit</button>
             </form>
             <button class="close"></button>
 
