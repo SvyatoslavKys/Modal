@@ -11,18 +11,22 @@
 
     position: relative;
     width: 600px;
-    height: 800px;
+    height: 90vh;
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.644);
     padding: 20px;
     user-select: none;
-
+}
+.modal>h2{
+    font-size: clamp(16px, 8vw, 45px);
+    margin: 10px 0;
 }
 .form-style{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 .close{
     display: flex;
@@ -123,6 +127,7 @@ textarea{
 }
 .message{
     padding: 10px;
+    max-height: 170px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
